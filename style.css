@@ -49,6 +49,7 @@ padding:0 0 0 0;
 color:#000;
 background:#efefef url(css/img/gray_jean.png);
 font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
+font-family: "微軟正黑體","Droid Sans Japanese","Noto Sans CJK TC","思源黑體 TWHK Regular","思源黑體","Source Han Sans TWHK Medium","Source Han Sans TWHK Medium","Noto Sans CJK","Noto Sans CJK Regular",Verdana; bottom;
 text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
 

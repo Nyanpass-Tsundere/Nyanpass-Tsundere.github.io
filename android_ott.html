@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<title>Project Android OTT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/kickstart.js"></script>
+</head>
+<body>
+	<nav class="navbar">
+
+	</nav>
+	<!-- Board -->
+	<div class="callout callout-top clearfix">
+		<div class="grid">
+			<h1>視界真奇妙</h1>
+			<h4>基於 Android 機上盒之區域多人遙控雲端電視系統</h4>
+			<a href="https://github.com/Nyanpass-Tsundere/TV" class="button blue large"><i class="fa fa-github" aria-hidden="true"></i>&nbsp電視端(Private)</a>
+			<a href="https://github.com/hsam46/Phone" class="button blue large"><i class="fa fa-github" aria-hidden="true"></i>&nbsp手機端(Private)</a>
+			<a href="https://github.com/Nyanpass-Tsundere/STB_server" class="button blue large"><i class="fa fa-github" aria-hidden="true"></i>&nbsp伺服器</a>
+		</div>
+	</div>
+	<!-- Content -->
+	<div class="grid">
+		<div class="col_12">
+			<ul class="tabs left">
+				<li><a href="#characteristic"><i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp特色</a></li>
+				<li><a href="#feauture"><i class="fa fa-user" aria-hidden="true"></i>&nbsp功能</a></li>
+				<li><a href="#projectstru"><i class="fa fa-code-fork" aria-hidden="true"></i>&nbsp系統架構</a></li>
+				<li><a href="#demo"><i class="fa fa-code-fork" aria-hidden="true"></i>&nbspDEMO</a></li>
+			</ul>
+			<div id="characteristic" class="tab-content">
+				<div class="grid">
+					<img src="img/android_ott_characteristic.jpg"></img>
+					<!-- Image -->
+					<div class="col_8">
+							<h4>即時</h4><hr />
+							<p>使用遙控器即可與電視互動，快速獲取需要資訊。</p><br />
+								<!-- p -->
+								<h4>分享</h4><hr />
+								<p>分享節目片段、文字評論、廣告資訊。</p><br />
+								<!-- p -->
+								<h4>在地化</h4><hr />
+								<p>結合當地資訊，提供適地性服務。</p><br />
+								<!-- p -->
+								<h4>互動</h4><hr />
+								<p>與其他使用者一同評論節目內容、參與節目進行。</p>
+									<!-- p -->
+								</div>
+								<div class="col_4"></div>
+							</div>
+						</div>
+				<!-- Chara. -->
+			<div id="feauture" class="tab-content">
+				<div class="grid">
+				<div class="col_8">
+				<h4>目前門禁系統無法得知目前訪客位置</h4><hr />
+				<p>目前的門禁系統都只能「禁止訪客」去開某些門，但是如果公司內有人與訪客認識帶訪客參觀不該參觀的地方、或是員工開門後被「跟車進入」，管理室與公司無從得知，可能造成管理風險。<br /><strong>因此我們希望建立一個系統可以更精確的追蹤訪客所在位置。</strong></p><br />
+				<h4>商辦大樓結構複雜</h4><hr />
+				<p>我們組員曾經前往某個商辦大樓完成職業訪查的作業時，在大樓裡面迷路了。<br />然而在商辦大樓內，GPS導航是有困難的，所以我們希望可以用藍芽Beacons進行定位並提供導航功能。</p>
+				</div>
+				<div class="col_4"></div>
+				</div>
+			</div>
+			<!-- Movement -->
+			<div id="projectstru" class="tab-content">
+				<div class="grid">
+				<div class="col_8">
+					<ul>
+						<li><p>伺服器</p>
+							<ul>
+								<li>接收手錶上傳的Beacons資料分析，並計算座標</li>
+								<li>紀錄手錶軌跡</li>
+								<li>提供路線計算功能</li>
+								<li>提供網頁管理介面</li>
+							</ul></li>
+							<li><p>手錶</p>
+								<ul>
+									<li>提供訪客導航</li>
+									<li>上傳Beacons資料</li>
+								</ul></li>
+								<li><p>Beacons</p>
+									<ul>
+										<li>須將Beacons座標、MacAddress寫入<code>setting.py</code></li>
+										<li>定時發送訊號</li>
+									</ul></li>
+									<li><p>門禁讀卡機</p>
+										<ul>
+											<li>向Server查詢該不該開門</li>
+										</ul></li>
+									</ul>
+				</div>
+				<div class="col_4"></div>
+				</div>
+			</div>
+			<!-- ProjectStru -->
+			<div id="demo" class="tab-content">
+				<div class="grid">
+				<div class="col_8">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/cxjDOHDsatM" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="col_4"></div>
+				</div>
+			</div>
+			<!-- Demo -->
+		</div>
+	</div>
+</body>
+</html>
